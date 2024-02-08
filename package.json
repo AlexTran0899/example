@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "scripts": {
     "start": "node index.js",
-    "server": "nodemon index.js",
-    "migrate:dev": "knex migrate:latest",
-    "rollback:dev": "knex migrate:rollback",
+    "dev": "nodemon index.js",
+    "migrate": "knex migrate:latest",
+    "rollback": "knex migrate:rollback",
+
     "seed:dev": "knex seed:run",
     "migrate:prod": "heroku run knex migrate:latest -a YOUR_HEROKU_APP_NAME",
     "rollback:prod": "heroku run knex migrate:rollback -a YOUR_HEROKU_APP_NAME",
