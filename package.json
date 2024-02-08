@@ -16,7 +16,8 @@
     "deploy": "git push heroku main"
   },
   "engines": {
-    "node": "16.13.2"
+    "node": "18.16.0",
+    "npm": "9.5.1"
   },
   "license": "ISC",
   "dependencies": {
