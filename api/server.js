@@ -15,7 +15,7 @@ async function insertUser(user) {
 }
 const server = express()
 
-server.use(express.static(path.join(__dirname, '../client/build')))
+server.use(express.static(path.join(__dirname, '../build')))
 server.use(express.json())
 
 server.use(helmet())
@@ -33,7 +33,7 @@ server.post('/api/users', async (req, res) => {
 
 
 server.use('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/build', 'index.html'))
+  res.sendFile(path.join(__dirname, '../build', 'index.html'))
 })
 
 module.exports = server
