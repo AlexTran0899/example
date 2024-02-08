@@ -6,7 +6,7 @@
     "dev": "nodemon index.js",
     "migrate": "knex migrate:latest",
     "rollback": "knex migrate:rollback",
-
+    "railway-postbuild": "cd client && npm i && npm run build",
     "seed:dev": "knex seed:run",
     "migrate:prod": "heroku run knex migrate:latest -a YOUR_HEROKU_APP_NAME",
     "rollback:prod": "heroku run knex migrate:rollback -a YOUR_HEROKU_APP_NAME",
