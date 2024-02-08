@@ -12,6 +12,7 @@
     "rollback:prod": "heroku run knex migrate:rollback -a YOUR_HEROKU_APP_NAME",
     "database:prod": "heroku pg:psql -a YOUR_HEROKU_APP_NAME",
     "seed:prod": "heroku run knex seed:run -a YOUR_HEROKU_APP_NAME",
+    "heroku-postbuild": "cd client && npm i && npm run build",
     "test": "cross-env NODE_ENV=testing jest --verbose --runInBand",
     "deploy": "git push heroku main"
   },
