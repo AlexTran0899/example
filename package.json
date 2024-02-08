@@ -13,12 +13,11 @@
     "database:prod": "heroku pg:psql -a YOUR_HEROKU_APP_NAME",
     "seed:prod": "heroku run knex seed:run -a YOUR_HEROKU_APP_NAME",
     "test": "cross-env NODE_ENV=testing jest --verbose --runInBand",
-    "build": "cd client && npm i && npm run build",
     "deploy": "git push heroku main"
   },
   "engines": {
-    "node": "18.16.0",
-    "npm": "9.5.1"
+    "node": "18.18.2",
+    "npm": "9.8.1"
   },
   "license": "ISC",
   "dependencies": {
