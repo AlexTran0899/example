@@ -14,7 +14,7 @@
     "seed:prod": "heroku run knex seed:run -a YOUR_HEROKU_APP_NAME",
     "test": "cross-env NODE_ENV=testing jest --verbose --runInBand",
     "build": "cd client && npm i && npm run build",
-    "heroku-postbuild": "cd client && npm i && npm run build",
+//    "heroku-postbuild": "cd client && npm i && npm run build",
     "deploy": "git push heroku main"
   },
   "engines": {
